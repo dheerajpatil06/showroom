@@ -1,3 +1,11 @@
+import pyodbc
+conn= pyodbc.connect('Driver={SQL Server};'
+                     'Server=DHEERAJ\SQLEXPRESS;'
+                     'Database=Dheeraj;'
+                     'Trusted_connection=yes;')
+cursor=conn.cursor()
+cursor.execute('select * from customer)
+    
 def showroom(Ture=1):
     print("Welcome to Volkswagen")
     firstname=str(input("Enter the First Name"))
